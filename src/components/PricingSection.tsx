@@ -4,39 +4,42 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Стартовый",
+    price: "290",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "Обложка группы (1 вариант)",
+      "Аватар и иконка",
+      "3 шаблона постов",
+      "Форматы PSD + Figma",
+      "Инструкция по установке",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Комплект",
+    price: "590",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "Обложка группы (2 варианта)",
+      "Аватар и иконка",
+      "10 шаблонов постов",
+      "3 шаблона сторис",
+      "Баннер для акции",
+      "Форматы PSD + Figma",
+      "Инструкция по установке",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
-    price: "По запросу",
+    name: "Премиум",
+    price: "990",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
-      "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Обложка группы (3 варианта)",
+      "Аватар и иконка",
+      "20 шаблонов постов",
+      "10 шаблонов сторис",
+      "Баннеры для акций и товаров",
+      "Фирменные иконки для меню",
+      "Приоритетная поддержка",
     ],
     highlighted: false,
   },
@@ -60,10 +63,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">свой комплект</span> оформления
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Для любого бюджета — от базового до полного профессионального оформления
           </p>
         </div>
 
@@ -121,8 +124,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все комплекты включают <span className="text-primary font-semibold">мгновенную доставку</span> и{" "}
+            <span className="text-primary font-semibold">инструкцию по установке</span>
           </p>
         </div>
       </div>

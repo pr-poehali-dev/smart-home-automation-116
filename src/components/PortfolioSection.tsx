@@ -4,40 +4,40 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Умный помощник по выборам",
-    category: "AI/ML и веб-разработка",
-    image: "/omgekeerdestemwijzer-banner.png",
+    title: "Тёмный минимализм",
+    category: "Магазин одежды",
+    image: "/placeholder.jpg",
     description:
-      "AI-приложение для выборов. Пользователи задают вопросы о позициях партий и получают 100% фактические ответы из официальных программ с использованием RAG-технологии.",
-    url: "https://de-omgekeerde-stemwijzer.onrender.com/",
-    tags: ["Next.js", "AI/ML", "RAG", "TypeScript"],
+      "Строгое тёмное оформление для магазина одежды. Включает обложку, аватар, 10 шаблонов постов и сторис в едином стиле.",
+    url: "#pricing",
+    tags: ["Одежда", "Тёмная тема", "Минимализм"],
   },
   {
-    title: "Автомойка Tahsin",
-    category: "Веб-дизайн и разработка",
-    image: "/autopoetsbedrijf-tahsin-project.png",
+    title: "Яркий fashion",
+    category: "Бьюти и косметика",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональный сайт для автомойки с 20-летним опытом. Полная презентация услуг, автомойки и гаража с современным адаптивным дизайном.",
-    url: "https://www.autopoetsbedrijftahsin.nl/",
-    tags: ["React", "Next.js", "Tailwind CSS"],
+      "Яркий и стильный комплект для бьюти-мастеров и косметических брендов. Пастельные цвета, женственный шрифт, готовые шаблоны для акций.",
+    url: "#pricing",
+    tags: ["Бьюти", "Пастель", "Женский стиль"],
   },
   {
-    title: "Кадровое агентство CAN",
-    category: "Веб-разработка",
-    image: "/can-uitzendbureau-project.png",
+    title: "Деловой синий",
+    category: "Услуги и B2B",
+    image: "/placeholder.jpg",
     description:
-      "Кадровое агентство с 30-летним опытом в садоводческом секторе. Сайт с обзором услуг и прямыми контактами для работодателей и соискателей.",
-    url: "https://canbv.nl/",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "Строгий профессиональный дизайн для компаний, оказывающих услуги. Синяя гамма, чёткая типографика, шаблоны для кейсов и отзывов.",
+    url: "#pricing",
+    tags: ["B2B", "Услуги", "Синяя гамма"],
   },
   {
-    title: "Портфолио Murat Sahin",
-    category: "Портфолио-сайт",
-    image: "/murat-sahin-portfolio.png",
+    title: "Уютный крафт",
+    category: "Handmade и крафт",
+    image: "/placeholder.jpg",
     description:
-      "Профессиональное портфолио full-stack разработчика. Демонстрация проектов, навыков и опыта с современным минималистичным дизайном и темной темой.",
-    url: "https://murat-sahin-dev.vercel.app/",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+      "Тёплый и уютный стиль для мастеров хенд-мейда и крафтовых магазинов. Бежевые тона, живые текстуры, шаблоны для фото товаров.",
+    url: "#pricing",
+    tags: ["Handmade", "Крафт", "Тёплые тона"],
   },
 ]
 
@@ -46,9 +46,9 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Наше портфолио</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">Примеры шаблонов</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Ознакомьтесь с подборкой наших последних проектов и узнайте, как мы помогаем бизнесу расти с помощью мощных цифровых решений.
+            Посмотрите, как выглядят наши комплекты оформления — стильно, профессионально и готово к использованию.
           </p>
         </div>
 
@@ -69,9 +69,9 @@ export function PortfolioSection() {
                     size="sm"
                     variant="secondary"
                     className="gap-2"
-                    onClick={() => window.open(project.url, "_blank")}
+                    onClick={() => window.location.href = project.url}
                   >
-                    Открыть проект <ExternalLink className="h-4 w-4" />
+                    Купить комплект <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </div>
